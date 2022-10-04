@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<title>HTML FORM</title>
+</head>
+<body>
+<form>
+			<label for="fname"	>FirstName:</label><br>
+			<input type="text" id="fname" name="fname" value="Mandagalla"><br>
+				<label for="lname"	>LastName:</label><br>
+			<input type="text" id="lname" name="lname" value="Dinesh"><br>
+			<p>we can change here names</p>
+			<hr>
+			<label	>FirstName:</label><br>
+			<!-- instead of label we can take just FirstName: -->
+			<input type="text" name="fname" value="Mandagalla"><br>
+				<label>LastName:</label><br>
+			<input type="text" name="lname" value="Dinesh"><br>
+				<p>#we can dismiss "for" in coding, because it interlink with "id", and this "for" uses when to store data when we submit. they both should be same</p>
+				<hr>
+				select your gender<br>
+				<input type="radio" name="gender" value="male">
+				<label>Male</label><br>
+				<input type="radio" name="gender" value="female">
+				<label>Female</label><br>
+				<input type="radio" name="gender" value="others">
+				<label>Others</label>
+				<br><br>
+			#	in radio;if we remove name, value then we don't have to select only 1 option, we can select all.
+			<hr>
+			select your profession<br>
+			<input type="checkbox" name="profession" value="govt. job">
+				<label>Govt.job</label><br>
+				<input type="checkbox" name="profession" value="private job">
+				<label>Private job</label><br>
+				<input type="checkbox" name="profession" value="business jon">
+				<label>Business job</label>
+				<br><br>
+				#checkbox gives an choice to select a multiple options
+<hr>
+<select size="3" multiple>
+				<!-- size in select tag gives how many options to see, qnd multiple will help in select more options -->							
+				<option>Caste certificate</option>
+				<option>Income certificate</option>
+				<option selected>Residence certificate</option>
+				<!--we put attribute selected to show this option first -->
+				<option>10th Memo</option>						
+</select>
+#select and options
+				<br><br>
+				<fieldset>
+								<legend>Personal Details:</legend>
+								<label for="fname"	>FirstName:</label><br>
+			<input type="text" id="fname" name="fname" value="Mandagalla"><br>
+				<label for="lname"	>LastName:</label><br>
+			<input type="text" id="lname" name="lname" value="Dinesh"><br>
+				</fieldset> 
+				#this rectangle, and details in it is field set and "Personal details" is legend.
+				<br><br>
+				<textarea placeholder="you can type here.."></textarea>
+				#text area
+				<br><br>
+				<!-- it is dragable -->
+				<input list="certificates">
+				<datalist id="certificates">
+								<option>Caste certificate</option>
+				<option>Income certificate</option>
+				<option selected>Residence certificate</option>
+								</datalist>
+								#data list
+								<br><br>
+<input type="submit">
+<input type="button" value="clear">
+<button>Try it</button>
+				
+</form>
+</body>
+</html>
